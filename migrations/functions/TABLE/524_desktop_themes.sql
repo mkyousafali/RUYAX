@@ -1,0 +1,52 @@
+﻿CREATE TABLE public.desktop_themes (
+    id integer NOT NULL,
+    name character varying(100) NOT NULL,
+    description character varying(255) DEFAULT ''::character varying,
+    is_default boolean DEFAULT false,
+    taskbar_bg character varying(100) DEFAULT 'rgba(0, 102, 178, 0.75)'::character varying,
+    taskbar_border character varying(100) DEFAULT 'rgba(255, 255, 255, 0.2)'::character varying,
+    taskbar_btn_active_bg character varying(100) DEFAULT 'linear-gradient(135deg, #4F46E5, #6366F1)'::character varying,
+    taskbar_btn_active_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    taskbar_btn_inactive_bg character varying(30) DEFAULT 'rgba(255, 255, 255, 0.95)'::character varying,
+    taskbar_btn_inactive_text character varying(30) DEFAULT '#0B1220'::character varying,
+    taskbar_btn_hover_border character varying(30) DEFAULT '#4F46E5'::character varying,
+    taskbar_quick_access_bg character varying(100) DEFAULT 'rgba(255, 255, 255, 0.1)'::character varying,
+    sidebar_bg character varying(30) DEFAULT '#374151'::character varying,
+    sidebar_text character varying(30) DEFAULT '#e5e7eb'::character varying,
+    sidebar_border character varying(30) DEFAULT '#1f2937'::character varying,
+    sidebar_favorites_bg character varying(30) DEFAULT '#1d2c5e'::character varying,
+    sidebar_favorites_text character varying(30) DEFAULT '#fcd34d'::character varying,
+    section_btn_bg character varying(30) DEFAULT '#1DBC83'::character varying,
+    section_btn_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    section_btn_hover_bg character varying(30) DEFAULT '#3b82f6'::character varying,
+    section_btn_hover_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    subsection_btn_bg character varying(30) DEFAULT '#1DBC83'::character varying,
+    subsection_btn_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    subsection_btn_hover_bg character varying(30) DEFAULT '#3b82f6'::character varying,
+    subsection_btn_hover_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    submenu_item_bg character varying(30) DEFAULT '#FFFFFF'::character varying,
+    submenu_item_text character varying(30) DEFAULT '#f97316'::character varying,
+    submenu_item_hover_bg character varying(30) DEFAULT '#3b82f6'::character varying,
+    submenu_item_hover_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    logo_bar_bg character varying(100) DEFAULT 'linear-gradient(135deg, #15A34A 0%, #22C55E 100%)'::character varying,
+    logo_bar_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    logo_border character varying(30) DEFAULT '#F59E0B'::character varying,
+    window_title_active_bg character varying(30) DEFAULT '#0066b2'::character varying,
+    window_title_active_text character varying(30) DEFAULT '#FFFFFF'::character varying,
+    window_title_inactive_bg character varying(100) DEFAULT 'linear-gradient(135deg, #F9FAFB, #E5E7EB)'::character varying,
+    window_title_inactive_text character varying(30) DEFAULT '#374151'::character varying,
+    window_border_active character varying(30) DEFAULT '#4F46E5'::character varying,
+    desktop_bg character varying(30) DEFAULT '#F9FAFB'::character varying,
+    desktop_pattern_opacity character varying(10) DEFAULT '0.4'::character varying,
+    interface_switch_bg character varying(100) DEFAULT 'linear-gradient(145deg, #3b82f6, #2563eb)'::character varying,
+    interface_switch_hover_bg character varying(100) DEFAULT 'linear-gradient(145deg, #2563eb, #1d4ed8)'::character varying,
+    created_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    created_by uuid
+);
+
+
+--
+-- Name: desktop_themes_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
