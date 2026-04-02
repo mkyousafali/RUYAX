@@ -1,0 +1,56 @@
+{
+  "name": "ruyax",
+  "version": "1.0.0",
+  "description": "Ruyax Management System - PWA-first windowed management platform",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter ruyax-frontend dev",
+    "build": "pnpm --filter ruyax-frontend build",
+    "build:pwa": "pnpm --filter ruyax-frontend build:pwa",
+    "build:windows": "pnpm --filter ruyax-frontend build:windows",
+    "preview": "pnpm --filter ruyax-frontend preview",
+    "check": "pnpm --filter ruyax-frontend check",
+    "check:watch": "pnpm --filter ruyax-frontend check:watch",
+    "lint": "pnpm --filter ruyax-frontend lint",
+    "format": "pnpm --filter ruyax-frontend format",
+    "test": "pnpm --filter ruyax-frontend test",
+    "setup": "pnpm install && pnpm --filter frontend install",
+    "docker:dev": "docker-compose -f docker-compose.dev.yml up",
+    "docker:prod": "docker-compose -f docker-compose.prod.yml up",
+    "i18n:extract": "pnpm --filter ruyax-frontend i18n:extract",
+    "i18n:build": "pnpm --filter ruyax-frontend i18n:build",
+    "version:patch": "node scripts/update-version.js patch",
+    "version:minor": "node scripts/update-version.js minor",
+    "version:major": "node scripts/update-version.js major",
+    "version:update": "node scripts/update-version.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "pg": "^8.16.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "keywords": [
+    "management-system",
+    "pwa",
+    "windowed-ui",
+    "bilingual",
+    "enterprise"
+  ],
+  "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
+    "@supabase/supabase-js": "^2.58.0",
+    "dotenv": "^17.2.3",
+    "mssql": "^12.1.1",
+    "onnxruntime-web": "^1.23.2",
+    "web-push": "^3.6.7",
+    "xlsx-js-style": "^1.2.0"
+  }
+}

@@ -1,0 +1,15 @@
+﻿
+> Ruyax-setup-installer@1.0.0 build
+> electron-builder --win
+
+  ΓÇó electron-builder  version=24.13.3 os=10.0.26100
+  ΓÇó loaded configuration  file=package.json ("build" field)
+  ΓÇó packaging       platform=win32 arch=x64 electron=28.3.3 appOutDir=dist\win-unpacked
+  ΓÇó file source doesn't exist  from=D:\Ruyax\scripts\Ruyax-branch-setup\bundled
+  ΓÇó building        target=nsis file=dist\Ruyax Setup Setup 1.0.0.exe archs=x64 oneClick=true perMachine=false
+  ΓÇó downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z size=1.3 MB parts=1
+  ΓÇó downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z duration=2.17s
+  ΓÇó downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z size=731 kB parts=1
+  ΓÇó downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z duration=2.008s
+  ΓÇó building block map  blockMapFile=dist\Ruyax Setup Setup 1.0.0.exe.blockmap
+

@@ -1,0 +1,16 @@
+tree da45effb9691a5b061577b371a6fcd79a244a18b
+parent 96ce128b42ef215816abc25927c637ac0b95c550
+author mkyousafali <mk.yousafali@gmail.com> 1762531568 +0300
+committer mkyousafali <mk.yousafali@gmail.com> 1762531568 +0300
+
+fix: Make products page fully mobile compatible
+
+- Implemented responsive grid layout (2 cols mobile, 3-4 cols desktop)
+- Reduced padding and margins for mobile screens
+- Scaled down product cards, images, and typography for small devices
+- Made buttons and interactive elements touch-friendly
+- Added responsive breakpoints at 480px and 768px
+- Improved category navigation for mobile with smaller buttons
+- Added line-clamp to prevent text overflow
+- Removed tap highlight for better touch UX
+- Product cards now properly display on all screen sizes

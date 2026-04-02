@@ -1,0 +1,8 @@
+181c12ffb19696c44f2b0114f090491e38b4599a commit	refs/heads/master
+2df7a3c0ed8e75a7174429a853b9d24eb77377cb commit	refs/remotes/origin/HEAD
+f1eef827aef927824f6149156e756bb96343c0fd commit	refs/remotes/origin/backup-before-go-backend
+cf5994979d10c5beb1daeedab7ed02c6dc30a12a commit	refs/remotes/origin/go-backend-test
+2df7a3c0ed8e75a7174429a853b9d24eb77377cb commit	refs/remotes/origin/master
+8854cc52f5a7c71e41744fcbe48f11e1bf9e9119 commit	refs/remotes/origin/remove-push-notifications
+3cdf8c3ff9cf7663d69e231ab3b958ac5f8ffc75 commit	refs/remotes/origin/updates
+ee4a460f145a7ad69c589225f5a401023182f54d commit	refs/remotes/ruyax/master
